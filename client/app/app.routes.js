@@ -12,6 +12,10 @@
           templateUrl: Config.rootPath + 'components/seed-help/seed-help-view.html',
           controller: 'seedHelp'
         })
+        .when('/columns', {
+          templateUrl: Config.rootPath + 'components/columns/columns-view.html',
+          controller: 'columns'
+        })
         .otherwise({
           redirectTo: '/home'
         });
