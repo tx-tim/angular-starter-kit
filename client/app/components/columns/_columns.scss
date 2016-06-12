@@ -1,9 +1,18 @@
-.column-1 {
+.prob-col {
 	border: 2px solid $brand-success;
-}
-.column-2 {
-	border: 2px solid $brand-success;
-}
-.column-3 {
-	border: 2px solid $brand-success;
+	background-color: lighten($brand-success, 40);
+	height: 175px;
+	>p, >img {
+		font-size: $font-size-h4;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		text-align: justify;
+    	-moz-text-align-last: justify;
+    	text-align-last: justify;
+	}
+	> img {
+		display: block;
+		margin: auto;
+	}
 }
