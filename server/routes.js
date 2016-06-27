@@ -20,4 +20,7 @@ module.exports = function (app) {
     basicHandler(dataLoader('test.json'), req, res);
   });
 
+  app.get('/api/equipment', function (req, res) {
+    basicHandler(dataLoader('equipment.json'), req, res);
+  });
 };

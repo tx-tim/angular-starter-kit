@@ -2,6 +2,7 @@
   'use strict';
 
   var gulp = require('gulp'),
+    del = require('del'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     concat = require('gulp-concat'),
@@ -86,6 +87,22 @@
       .pipe(gulp.dest('./client/build/'));
   });
 
+  gulp.task('buildImgs', ['clean:img'], function() {
+    var imgpaths = {
+      source: './client/images/**/*.png',
+      dest: './client/build/images/'
+    };
+
+    gulp.src(imgpaths.source)
+    .pipe(gulp.dest(imgpaths.dest));
+  });
+
+  gulp.task('clean:img', function(imgpaths) {
+   return del([
+      './client/build/images/**/*',
+    ]);
+  });
+
   /**
    * Build styles for vendors from SASS
    */
@@ -122,6 +139,6 @@
   });
 
   // Default Gulp Task
-  gulp.task('default', ['buildApp', 'buildAppVendor', 'buildSass', 'buildSassVendor', 'startServer', 'watch']);
+  gulp.task('default', ['buildImgs', 'buildApp', 'buildAppVendor', 'buildSass', 'buildSassVendor', 'startServer', 'watch']);
 
 }());

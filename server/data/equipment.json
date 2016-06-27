@@ -1,0 +1,40 @@
+{
+  "info": "This data was fetched from mockup server",
+  "path": "(server/data/equipment.json)",
+  "equipment": [{
+	  	"name": "Blue Candle",
+	  	"cost": 60,
+	  	"type": 1,
+	  	"description": "The candle can be used to burn away trees in the Overworld in order to reveal hidden passages or to provide light in dark rooms of dungeons. The flames will expire when Link leaves the room. The candle can only be used once in any given room. In order to use it again, Link must leave the room and come back. The candle's flame lasts for several seconds and does damage equivalent to Link's Wooden Sword. The flame can also damage Link if he touches it."
+  	},
+  	{
+  		"name": "Blue Potion",
+  		"cost": 60,
+  		"type": 3,
+  		"description": "The Blue Potion, also known as the Ultimate Potion or the Medicine of Life and Magic, is a recurring item in the Legend of Zelda series. This handy potion fully restores both Link's health and magic. It occasionally requires a mushroom or Chu Jelly to be made."
+  	},
+  	{
+  		"name": "Red Potion",
+  		"cost": 60,
+  		"type": 3,
+  		"description": "Red Potion is a recurring item in the Legend of Zelda series. This is a type of curative medicine, easily identified by its red color. Normally, Link must have a Bottle to store the potion in. It is usually a common item, which can be purchased from shops or brewed; occasionally, Mushrooms or Red Chu Jelly are required to make Red Potion.  Normally, this potion costs more than a Green Potion but less than a Blue Potion because the Blue Potion usually has the effects of both the Red and Green Potions. The price is usually around 60 Rupees."
+  	},
+  	{
+  		"name": "Magical Shield",
+  		"cost": 160,
+  		"type": 1,
+  		"description": "This shield is able to fend off the spells cast by Wizzrobes, Sword Beams from Lynels, and energy balls belched by various monsters including the River Zora. It bears a cross insignia and is significantly larger than the smaller shield Link carries from the outset."
+  	},
+  	{
+  		"name": "Arrows",
+  		"cost": 80,
+  		"type": 2,
+  		"description": "Arrows serve as projectiles for bows, consisting of sharp arrowheads at the end of thin sticks of wood. Arrows usually deal quite a bit of damage; often equal to or above the damage that a game's weakest sword can deal."
+  	},
+  	{
+  		"name": "Recovery Heart",
+  		"cost": 10,
+  		"type": 2,
+  		"description": "The Recovery Heart is a basic method of health recovery.  Picking one up heals Link by one heart."
+  	}]
+}

@@ -8,6 +8,7 @@
         scope.navLinks = [
           {title: 'Home', href: 'home'},
           {title: 'Columns', href: 'columns'},
+          {title: 'Shop', href: 'shop'},
           {title: 'Help', href: 'seed-help'}
         ];
       }

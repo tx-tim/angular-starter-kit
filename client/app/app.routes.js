@@ -16,6 +16,10 @@
           templateUrl: Config.rootPath + 'components/columns/columns-view.html',
           controller: 'columns'
         })
+        .when('/shop', {
+          templateUrl: Config.rootPath + 'components/shop/shop-view.html',
+          controller: 'shop'
+        })
         .otherwise({
           redirectTo: '/home'
         });

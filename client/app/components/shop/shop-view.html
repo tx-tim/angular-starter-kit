@@ -1,0 +1,46 @@
+<div class="container seed-help">
+  <div class="jumbotron">
+    <h1>Shop</h1>
+    <p class="lead">Buy Something, Will 'Ya!</p>
+    <ol>
+      <li>There is a list of items in the left hand column below.</li>
+      <li>When an item is clicked, show the details of the item in the right hand column.</li>
+    </ol>
+    <h6>Notes</h6>
+    <ul class="small">
+      <li>Feel free to modify any html, css, or javascript to accomplish your task.</li>
+    </ul>
+  </div>
+  <!-- End jumbotron -->
+
+
+  <!-- =================================== -->
+  <!--  -->
+  <!-- =================================== -->
+  <div class="row">
+    <div class="col-xs-4 item-list">
+      <h4>Item List</h4>
+      <ul class="list-unstyled">
+        <li ng-repeat="item in equipment"><a class="text-info" href="#">{{item.name}}</a></li>
+      </ul>
+    </div>
+    <div class="col-xs-8 item-detail">
+      <h4>Item Detail</h4>
+      <dl>
+        <dt>
+          Item Name: 
+        </dt>
+        <dd>
+          Price: 
+          <br>
+          Description: 
+        </dd>
+      </dl>
+    </div>
+  </div>
+
+
+  <!-- =================================== -->
+  <!-- -->
+  <!-- =================================== -->
+</div>

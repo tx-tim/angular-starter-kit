@@ -1,2 +1,25 @@
-$jumbotron-padding: 25px; // Here you can change default bootstrap variables
+$font-size-base: 18px;
+$font-size-large:         ceil(($font-size-base * 1.1)) !default; 
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; 
+
+$font-size-h1:            floor(($font-size-base * 2.15)) !default; 
+$font-size-h2:            floor(($font-size-base * 1.7)) !default; 
+$font-size-h3:            ceil(($font-size-base * 1.25)) !default; 
+$font-size-h4:            ceil(($font-size-base * 1.1)) !default; 
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default; 
+$border-radius-base:        2px !default;
+$border-radius-large:       3px !default;
+$border-radius-small:       1px !default;
+
+//== Jumbotron
+//
+//##
+
+$jumbotron-padding:              15px !default;
+$jumbotron-color:                inherit !default;
+$jumbotron-heading-color:        inherit !default;
+$jumbotron-font-size:            ceil(($font-size-base * 1.25)) !default;
+$jumbotron-heading-font-size:    ceil(($font-size-base * 2.75)) !default;
+
 @import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
