@@ -97,6 +97,16 @@
     .pipe(gulp.dest(imgpaths.dest));
   });
 
+  gulp.task('buildFonts', function() {
+    var fontpaths = {
+      source: './client/fonts/**/*',
+      dest: './client/build/fonts/'
+    };
+
+    gulp.src(fontpaths.source)
+    .pipe(gulp.dest(fontpaths.dest));
+  });
+
   gulp.task('clean:img', function(imgpaths) {
    return del([
       './client/build/images/**/*',
@@ -139,6 +149,6 @@
   });
 
   // Default Gulp Task
-  gulp.task('default', ['buildImgs', 'buildApp', 'buildAppVendor', 'buildSass', 'buildSassVendor', 'startServer', 'watch']);
+  gulp.task('default', ['buildImgs', 'buildFonts', 'buildApp', 'buildAppVendor', 'buildSass', 'buildSassVendor', 'startServer', 'watch']);
 
 }());

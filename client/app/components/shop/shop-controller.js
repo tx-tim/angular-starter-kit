@@ -2,10 +2,11 @@
   'use strict';
 
   angular.module('App.components.shop')
-    .controller('shop', function ($scope, Query) {
+    .controller('shop', function ($scope, Query, $timeout) {
       Query.equipment.get(function (res) {
-        $scope.equipment = res.data.equipment;
+      	$timeout(function() {
+      		$scope.equipment = res.data.equipment;
+      	}, 2000);
       });
     });
-
 }());

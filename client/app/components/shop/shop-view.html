@@ -20,10 +20,12 @@
   <div class="row">
     <div class="col-xs-4 item-list">
       <h4>Item List</h4>
+      <span ng-show="!equipment.length > 0" class="glyphicon glyphicon-refresh glyphicon-spin"></span>
       <ul class="list-unstyled">
         <li ng-repeat="item in equipment"><a class="text-info" href="#">{{item.name}}</a></li>
       </ul>
     </div>
+
     <div class="col-xs-8 item-detail">
       <h4>Item Detail</h4>
       <dl>

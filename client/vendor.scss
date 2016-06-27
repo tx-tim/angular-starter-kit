@@ -1,13 +1,14 @@
+$bootstrap-sass-asset-helper: false !default;
 $font-size-base: 18px;
-$font-size-large:         ceil(($font-size-base * 1.1)) !default; 
-$font-size-small:         ceil(($font-size-base * 0.85)) !default; 
+$font-size-large:         ceil(($font-size-base * 1.1)); 
+$font-size-small:         ceil(($font-size-base * 0.85)); 
 
-$font-size-h1:            floor(($font-size-base * 2.15)) !default; 
-$font-size-h2:            floor(($font-size-base * 1.7)) !default; 
-$font-size-h3:            ceil(($font-size-base * 1.25)) !default; 
-$font-size-h4:            ceil(($font-size-base * 1.1)) !default; 
-$font-size-h5:            $font-size-base !default;
-$font-size-h6:            ceil(($font-size-base * 0.85)) !default; 
+$font-size-h1:            floor(($font-size-base * 2.15)); 
+$font-size-h2:            floor(($font-size-base * 1.7)); 
+$font-size-h3:            ceil(($font-size-base * 1.25)); 
+$font-size-h4:            ceil(($font-size-base * 1.1)); 
+$font-size-h5:            $font-size-base;
+$font-size-h6:            ceil(($font-size-base * 0.85)); 
 $border-radius-base:        2px !default;
 $border-radius-large:       3px !default;
 $border-radius-small:       1px !default;
@@ -16,10 +17,19 @@ $border-radius-small:       1px !default;
 //
 //##
 
-$jumbotron-padding:              15px !default;
-$jumbotron-color:                inherit !default;
-$jumbotron-heading-color:        inherit !default;
-$jumbotron-font-size:            ceil(($font-size-base * 1.25)) !default;
-$jumbotron-heading-font-size:    ceil(($font-size-base * 2.75)) !default;
+$jumbotron-padding:              15px;
+$jumbotron-color:                inherit;
+$jumbotron-heading-color:        inherit;
+$jumbotron-font-size:            ceil(($font-size-base * 1.25));
+$jumbotron-heading-font-size:    ceil(($font-size-base * 2.75));
+
+$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "./fonts/glyphicons/");
+
+//** File name for all font files.
+$icon-font-name:          "glyphicons-halflings-regular";
+//** Element ID within SVG icon file.
+$icon-font-svg-id:        "glyphicons_halflingsregular";
+
+
 
 @import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
