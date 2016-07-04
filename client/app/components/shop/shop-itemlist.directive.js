@@ -8,7 +8,7 @@
     		template: '<h4>item list</h4>' +
     					'<span ng-show="!equipment.length > 0" class="glyphicon glyphicon-refresh glyphicon-spin"></span>' +
   						'<ul class="list-unstyled">' +
-					        '<li ng-repeat="item in equipment"><a class="text-info" href="" ng-click="selectItem(equipment, item)">{{item.name}}</a></li>' +
+					        '<li ng-repeat="item in equipment"><a ng-class="{active: item.selected===true}" class="text-info" href="" ng-click="selectItem(equipment, item)">{{item.name}}</a></li>' +
 					    '</ul>',
     		link: function(scope) {
     			

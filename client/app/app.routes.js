@@ -18,10 +18,6 @@
         })
         .when('/shop', {
           templateUrl: Config.rootPath + 'components/shop/shop-view.html',
-          controller: 'shop'
-        })
-        .when('/eshop', {
-          templateUrl: Config.rootPath + 'components/shop/eshop-view.html',
         })
         .otherwise({
           redirectTo: '/home'
