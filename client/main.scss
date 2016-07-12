@@ -1,3 +1,9 @@
+$icon-font-path: "bootstrap/", "./fonts/glyphicons/";
+
+//** File name for all font files.
+$icon-font-name:          "glyphicons-halflings-regular";
+//** Element ID within SVG icon file.
+$icon-font-svg-id:        "glyphicons_halflingsregular";
 @import 'styles/settings';
 
 /* Application scss */

@@ -133,7 +133,7 @@
     gulp.watch(['./client/main.js', './client/app/**/*.js'], ['buildApp']);
     gulp.watch(['./client/app/**/*.html'], ['buildApp']);
     gulp.watch('./client/vendor.js', ['buildAppVendor']);
-    gulp.watch(['./client/main.scss', './client/styles/*.scss', './client/app/**/*.scss'], ['buildSass']);
+    gulp.watch(['./client/main.scss', './client/styles/*', './client/app/**/*.scss'], ['buildSass']);
     gulp.watch('./client/vendor.scss', ['buildSassVendor']);
   });
 

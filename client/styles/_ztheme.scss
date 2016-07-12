@@ -1,0 +1,56 @@
+$bootstrap-sass-asset-helper: false !default;
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$gray-base:              #494b4b;
+$gray-darker:            lighten($gray-base, 13.5%);
+$gray-dark:              lighten($gray-base, 20%);  
+$gray:                   lighten($gray-base, 33.5%);
+$gray-light:             lighten($gray-base, 46.7%);
+$gray-lighter:           lighten($gray-base, 93.5%);
+
+$brand-primary:         #0d9263; // zelda green
+$brand-success:         #0d9263; // zelda green
+$brand-info:            #d4ce46; // zelda gold
+$brand-warning:         #d4ce46; // zelda gold
+$brand-danger:          #d4ce46; // zelda gold
+
+//** Global text color on `<body>`.
+$text-color:            $gray-light;
+
+//** Global textual link color.
+$link-color:            $brand-primary;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 15%);
+//** Link hover decoration.
+$link-hover-decoration: underline;
+
+
+$font-size-base: 18px;
+$font-size-large:         ceil(($font-size-base * 1.1)); 
+$font-size-small:         ceil(($font-size-base * 0.85)); 
+
+$font-size-h1:            floor(($font-size-base * 2.15)); 
+$font-size-h2:            floor(($font-size-base * 1.7)); 
+$font-size-h3:            ceil(($font-size-base * 1.25)); 
+$font-size-h4:            ceil(($font-size-base * 1.1)); 
+$font-size-h5:            $font-size-base;
+$font-size-h6:            ceil(($font-size-base * 0.85)); 
+$border-radius-base:        2px !default;
+$border-radius-large:       3px !default;
+$border-radius-small:       1px !default;
+
+$body-bg: darken($gray-base, 20%);
+
+//== Jumbotron
+//
+//##
+
+$jumbotron-padding:              15px;
+$jumbotron-color:                inherit;
+$jumbotron-bg:                   $body-bg;
+$jumbotron-heading-color:        $brand-info;
+$jumbotron-font-size:            ceil(($font-size-base * 1.25));
+$jumbotron-heading-font-size:    ceil(($font-size-base * 2.75));

@@ -1,35 +1,5 @@
-$bootstrap-sass-asset-helper: false !default;
-$font-size-base: 18px;
-$font-size-large:         ceil(($font-size-base * 1.1)); 
-$font-size-small:         ceil(($font-size-base * 0.85)); 
-
-$font-size-h1:            floor(($font-size-base * 2.15)); 
-$font-size-h2:            floor(($font-size-base * 1.7)); 
-$font-size-h3:            ceil(($font-size-base * 1.25)); 
-$font-size-h4:            ceil(($font-size-base * 1.1)); 
-$font-size-h5:            $font-size-base;
-$font-size-h6:            ceil(($font-size-base * 0.85)); 
-$border-radius-base:        2px !default;
-$border-radius-large:       3px !default;
-$border-radius-small:       1px !default;
-
-//== Jumbotron
+//== Theme
 //
 //##
-
-$jumbotron-padding:              15px;
-$jumbotron-color:                inherit;
-$jumbotron-heading-color:        inherit;
-$jumbotron-font-size:            ceil(($font-size-base * 1.25));
-$jumbotron-heading-font-size:    ceil(($font-size-base * 2.75));
-
-$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "./fonts/glyphicons/");
-
-//** File name for all font files.
-$icon-font-name:          "glyphicons-halflings-regular";
-//** Element ID within SVG icon file.
-$icon-font-svg-id:        "glyphicons_halflingsregular";
-
-
-
+@import './styles/hyrule';
 @import '../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
