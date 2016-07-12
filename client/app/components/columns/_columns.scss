@@ -1,11 +1,13 @@
-.prob-col {
-	border-top: 2px solid $brand-success;
-	border-bottom: 2px solid $brand-success;
-	background-color: lighten($brand-success, 40);
-	>p, >img {
-		font-size: $font-size-h4;
-		text-align: justify;
-    	-moz-text-align-last: justify;
-    	text-align-last: justify;
-	}
+.sword-scabbard {
+	padding: $padding-large-vertical $padding-large-horizontal;
 }
+.flame-box {
+	height: 32px;
+	background: url('./images/flame72.gif') no-repeat 0 0;
+	background-size: contain;
+}
+
+.cave-border {
+		height: 35px;
+		background: url('./images/wall.png') repeat-x 0 100%;
+	}

@@ -89,7 +89,7 @@
 
   gulp.task('buildImgs', ['clean:img'], function() {
     var imgpaths = {
-      source: './client/images/**/*.png',
+      source: './client/images/**/*',
       dest: './client/build/images/'
     };
 
