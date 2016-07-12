@@ -10,6 +10,7 @@ $icon-font-svg-id:        "glyphicons_halflingsregular";
 @import 'app/components/seed-help/seed-help';
 @import 'app/components/columns/columns';
 @import 'app/components/shop/shop';
+@import 'app/components/home/home';
 
 .fa-spin-custom, .glyphicon-spin {
     -webkit-animation: spin 1000ms infinite linear;
@@ -35,3 +36,4 @@ $icon-font-svg-id:        "glyphicons_halflingsregular";
         transform: rotate(359deg);
     }
 }
+

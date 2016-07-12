@@ -50,7 +50,7 @@ $body-bg: darken($gray-base, 20%);
 
 $jumbotron-padding:              15px;
 $jumbotron-color:                inherit;
-$jumbotron-bg:                   $body-bg;
+$jumbotron-bg:                   transparent;
 $jumbotron-heading-color:        $brand-info;
 $jumbotron-font-size:            ceil(($font-size-base * 1.25));
 $jumbotron-heading-font-size:    ceil(($font-size-base * 2.75));
